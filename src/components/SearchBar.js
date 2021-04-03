@@ -11,12 +11,15 @@ function SearchBar(props) {
     }
 
     return (
-        <form onSubmit={initSearch}>
-            <input
-            ref={termToSearch}
-            type='text'
-            />
-        </form>
+        <header id='header'>
+            <form id='search-form' onSubmit={initSearch}>
+                <input
+                ref={termToSearch}
+                type='text'
+                placeholder='🔍 Search...'
+                />
+            </form>
+        </header>
     )
 }
 
