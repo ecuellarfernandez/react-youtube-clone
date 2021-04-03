@@ -1,38 +1,43 @@
 import { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import youtube from './apis/youtube';
-import { Container } from "@material-ui/core";
+import VideoList from "./components/VideoList";
+import VideoDetails from "./components/VideoDetails";
+import './static/css/main.scss';
 
 function App() {
 
-  // const [videos, setVideos] = useState([]);
-  // const [selectedVideo, setSelectedVideo] = useState(null);
+  const [videos, setVideos] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
   const handleSubmit = async (termReceivedFromSearchBar)=>{
     try{
       const res = await youtube.get('/search', {
         params:{
-          q: termReceivedFromSearchBar
+          q: termReceivedFromSearchBar,
+          type: 'video'
         }
       })
-
-      console.log(res.data.items);
-      
+      setVideos(res.data.items);
+      setSelectedVideo(res.data.items[0]);
     }catch(e){
       console.error(e)
     }
   }
 
-  // const handleVideoSelect = ()=>{
-
-  // }
+  const handleVideoSelect = (video)=>{
+    console.log(video)
+    setSelectedVideo(video)
+  }
 
   return (
-    <Container>
-      <SearchBar submitHandler={handleSubmit}/>
-      {/* <VideoDetail /> */}
-      {/* <VideoList /> */}
-    </Container>
+    <div id='wrapper'>
+        <SearchBar submitHandler={handleSubmit}/>
+        <section id='media'>
+          <VideoDetails currentVideo={selectedVideo}/>
+          <VideoList list={videos} handleVideoSelect={handleVideoSelect}/>
+        </section>
+    </div>
   );
 }
 
