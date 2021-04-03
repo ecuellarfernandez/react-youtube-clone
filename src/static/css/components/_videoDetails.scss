@@ -1,0 +1,16 @@
+.current-video{
+    padding-bottom: map-get($paddings, 'box');
+
+    &__video{
+        width: 99%;
+        height: 50vw;
+        max-height: 43.75rem; //700px
+    }
+    &__description{
+        padding: map-get($paddings, 'item') 0;
+
+        & h1, p{
+            padding: map-get($paddings, 'text-md') 0;
+        }
+    }
+}

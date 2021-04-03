@@ -1,0 +1,15 @@
+#media{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}   
+    .current-video{
+        width: 75%;
+        flex-grow: 1;
+    }
+
+    .video-list{
+        flex-basis: 15rem;
+        flex-grow: 1;
+    }

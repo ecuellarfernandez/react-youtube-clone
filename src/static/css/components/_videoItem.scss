@@ -1,0 +1,20 @@
+.video-item{
+    display: flex;
+    padding-bottom: map-get($paddings, "item"); //5px
+    cursor: pointer;
+
+    & img{
+        width: 10rem; //160px
+    }
+
+    &__description{
+        padding: 0 map-get($paddings, 'item');
+
+        & h5, h6{
+            padding: map-get($paddings, 'text-sm') 0;
+        }
+        & h6{
+            opacity: .5;
+        }
+    }
+}
