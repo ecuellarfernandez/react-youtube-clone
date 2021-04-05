@@ -33,10 +33,8 @@ function App() {
   return (
     <div id='wrapper'>
         <SearchBar submitHandler={handleSubmit}/>
-        <section id='media'>
-          <VideoDetails currentVideo={selectedVideo}/>
-          <VideoList list={videos} handleVideoSelect={handleVideoSelect}/>
-        </section>
+        <VideoDetails currentVideo={selectedVideo}/>
+        <VideoList list={videos} handleVideoSelect={handleVideoSelect}/>
     </div>
   );
 }
