@@ -11,12 +11,13 @@ const VideoDetails = (props) => {
 
     return (
         <div className='current-video'>
-            <iframe
-            className='current-video__video'
-            src={urlForIframe}
-            title='YouTube video player'
-            allowFullScreen
-            ></iframe>
+            <div className='current-video__video'>
+                <iframe
+                src={urlForIframe}
+                title='YouTube video player'
+                allowFullScreen
+                ></iframe>
+            </div>
 
             <div className='current-video__description'>
                 <h1>{currentVideo.snippet.title}</h1>
