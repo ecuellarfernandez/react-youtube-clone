@@ -7,17 +7,36 @@
 
     body{
         font-family: Roboto, Arial, sans-serif;
-        color: $white;
         background-color: $semiDarkPurple;
+    }
+
+    *::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+      
+    *::-webkit-scrollbar-track {
+    background: $darkPurple;        /* color of the tracking area */
+    }
+    
+    *::-webkit-scrollbar-thumb {
+    background-color: lightgray;    /* color of the scroll thumb */
+    border-radius: 12px;       /* roundness of the scroll thumb */
     }
 
     input[type=text]{
         width: 100%;
-        border-radius: 0.313rem; //5px
+        border-radius: $border-radius; //5px
         padding: 0.313rem;
     }
 
-    img{
-        max-width: 100%;
+    iframe{
+        width: 100%;
         height: 100%;
     }
+
+    div {
+        word-wrap: break-word;
+    }
+
+    

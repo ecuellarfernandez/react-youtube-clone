@@ -1,0 +1,6 @@
+.video-list{
+    width: 100%;
+    margin: map-get($separations, 'box') 0;
+    display: flex;
+    overflow-x: auto;
+}

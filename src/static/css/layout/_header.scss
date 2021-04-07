@@ -1,17 +1,4 @@
-body{
-    padding-top: 4rem;
+#header{
+    width: 100%;
+    padding: map-get($separations, 'box') 0;
 }
-    #header{
-        width: 100%; height: 3rem;
-        line-height: 3rem;
-        position: fixed;
-        top: 0; left: 0;
-        display: flex;
-        justify-content: center;
-
-        background-color: $darkPurple;
-        opacity: .95;
-    }
-        #search-form{
-            width: 53.125rem; //850px
-        }

@@ -1,17 +1,26 @@
 .video-item{
     display: flex;
-    padding-bottom: map-get($paddings, "item"); //5px
+    position: relative;
+    min-width: 250px; //350px
+    height: 200px;
+
+    margin:map-get($separations, 'item');
+    border-radius: $border-radius;
+    overflow: hidden;
     cursor: pointer;
 
-    & img{
-        width: 10rem; //160px
-    }
-
     &__description{
-        padding: 0 map-get($paddings, 'item');
+        width: 100%;
+        min-height: 40%; height: auto;
+        position: absolute;
+        left:0; bottom: 0;
+
+        background-color: white;
+
+        padding: map-get($separations, 'item');
 
         & h5, h6{
-            padding: map-get($paddings, 'text-sm') 0;
+            padding: map-get($separations, 'text-sm') 0;
         }
         & h6{
             opacity: .5;
