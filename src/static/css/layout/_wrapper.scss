@@ -1,9 +1,18 @@
-#wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 90%;
-    max-width: 100rem; //1600px
-}
+// .app {
+// 	display: flex;
+// 	// flex-direction: column;
+// 	// justify-content: center;
+// 	// align-items: center;
+// 	// margin: 0 auto;
+// 	// width: 90%;
+// 	// max-width: 100rem; //1600px
+// 	& main {
+// 		margin: 0 auto;
+// 		width: 70%;
+// 	}
+// }
+
+// #root,
+// .app {
+// 	height: 100%;
+// }

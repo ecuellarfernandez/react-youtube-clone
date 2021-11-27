@@ -1,12 +1,13 @@
-@import 'vars';
+@import "vars";
 // Base
-@import 'base/page';
+@import "base/page";
 
 // Components
-@import 'components/videoDetails';
-@import 'components/videoItem';
-@import 'components/videoList';
+@import "components/videoDetails";
+@import "components/videoItem";
+@import "components/videoList";
+@import "components/sidebar";
 
 // Layout
-@import 'layout/header';
-@import 'layout/wrapper';
+@import "layout/header";
+@import "layout/wrapper";

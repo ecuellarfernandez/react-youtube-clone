@@ -1,14 +1,18 @@
 // Color
-$darkPurple:hsl(258, 52%, 5%);
+$blackPurple: hsl(280, 13%, 9%);
+$darkPurple: hsl(258, 52%, 5%);
 $semiDarkPurple: hsl(244, 25%, 11%);
 $white: hsl(0, 0%, 100%);
 
 // Padding
-$separations:(
-    'box': 1.25rem, //20px
-    'item': 0.438rem, //7px
-    'text-md': 0.313rem, //5px
-    'text-sm': 0.188rem//3px
+$separations: (
+	"box": 1.25rem,
+	//20px
+	"item": 0.438rem,
+	//7px
+	"text-md": 0.313rem,
+	//5px
+	"text-sm": 0.188rem //3px,
 );
 
 // radius
